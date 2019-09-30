@@ -1,0 +1,258 @@
+/* INDEX page styling */
+
+nav{
+    float: right;
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    background-color: #ffffff;
+    border:2px solid #cccccc;
+    background-color:none;
+    margin:auto;
+    height:auto;
+    /* margin-left:40px;
+    margin-right:40px; */
+    color:#777777;
+    padding: 5px 5px 5px 5px;
+    /* max-width: 960px; */
+}
+
+span{
+    /* width: 70vw;
+    float:left; */
+    padding:5px 5px 5px 5px;
+    color:#ffffff;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    margin:auto;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#4aaaa5;
+    border-bottom: 2px solid #cccccc;
+}
+
+
+#my-photo{
+    float: left;
+    max-height: 220px;
+    max-width: 150px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+#main-content{
+    border-radius: 10px;
+    max-width: 960px;
+    margin:auto;
+    padding: 5px 5px 5px 5px;
+    background: #ffffff;
+    border:2px solid #dddddd;
+    margin-bottom:25px;
+    margin-top:20px;
+    font-size:16px;
+}
+footer{
+    color:white;
+    text-align: center;
+    background-color: #666666;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    height:10px;
+    border-top: 3px solid #4aaaa5;
+    position: fixed;
+    bottom: 1px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+p{
+    margin: 5px;
+}
+
+/* CONTACT Page Style */
+
+#input-message{
+    width:90%;
+    height:150px;
+    border:1px solid #777777;
+    padding: 3px 3px 3px 3px;
+}
+
+#input-name{
+    width:90%;
+    height: 30px;
+    border:1px solid #777777;
+    padding: 3px 3px 3px 3px;
+}
+
+#input-email{
+    /* width:500px; */
+    width: 90%;
+    height: 30px;
+    border:1px solid #777777;
+    padding: 3px 3px 3px 3px;
+}
+
+button{
+    width:120px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    /* margin-bottom: 5px; */
+}
+
+/* Portfolio Page  */
+
+.pf-box {
+    width: 300px;
+    height: 150px;
+    display:inline-block;
+    border: #cccccc solid 2px;
+    margin: 10px 10px 10px 10px;   
+    padding: 10px 10px 10px 10px;
+}
+
+.pf-item-name {
+    width: 90%;
+    height: 5px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 12px;
+    text-align:center;
+    padding: 10px;
+    margin-top:120px;
+}
+
+#cat {
+    background-image: url("../images/cat.jpg");
+    background-size: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding:3px 3px 3px 3px;
+}
+#dog {
+    background-image: url("../images/dog.jpg");
+    background-size: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding:3px 3px 3px 3px;
+}
+#lion {
+    background-image: url("../images/lion.jpg");
+    background-size: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding:3px 3px 3px 3px;
+}
+#tiger {
+    background-image: url("../images/tiger.jpg");
+    background-size: 100%;
+    max-width: 100%;
+    margin: auto;    
+    padding:3px 3px 3px 3px;
+}
+
+
+/* Using media queries for different width sizes  */
+
+/* Media query for max width : 980px  */
+
+@media screen and (max-width: 979px) {
+    header{
+        width:90%;
+    }
+    #main-content{
+        width:90%;
+    }
+  }
+
+
+/* Media query for max width : 768px  */
+
+@media screen and (max-width: 767px) {
+    header{
+        width:80%;
+    }
+    #main-content{
+        width: 80%;
+        background: #9bf1ec;
+    }
+  }
+
+/* Media query for max width : 640px  */
+
+@media screen and (max-width: 639px) {
+    header{
+        width: 80vw;
+        text-align: center;
+    }
+
+    nav{
+        float:unset;
+        width:vmax;
+        position:top;
+    }
+    
+    #main-content{
+        width: 80vw;
+        background:#4aaaa5;
+        height:90%;
+        color: white;  
+        text-align: center;    
+    }
+    h1{
+        color: white;
+        text-align: left;
+    }
+    /* img{
+        margin-block: auto;
+    } */
+
+    #my-photo{
+        display:unset;
+        float:none;
+        max-width: 90%;
+        max-height: 90%;
+        margin:auto;
+        align-self: center;
+        /* max-width: 500%; */
+        /* margin-left: 50%; */
+        
+    }
+
+    /* Contact Page  */
+
+    #input-message{
+        width:90%;
+        padding: 1px 1px 1px 1px;
+    }
+    
+    #input-name{
+        width:90%;
+        height: 30px;
+        padding: 1px 1px 1px 1px;
+    }
+    
+    #input-email{
+        /* width:500px; */
+        width: 90%;
+        height: 30px;
+        padding: 1px 1px 1px 1px;
+    }
+
+  }
+
